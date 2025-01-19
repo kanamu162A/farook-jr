@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transaction History</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Transaction History</h1>
+    <div class="search-container">
+      <input type="text" id="narration" placeholder="Enter Narration">
+      <input type="date" id="date">
+      <button id="search-button">Search</button>
+    </div>
+    <p id="error-message" class="error-message"></p>
+    <table id="transaction-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Date</th>
+          <th>Account Name</th>
+          <th>Transaction Status</th>
+          <th>Transaction Ref</th>
+          <th>Settlement Debit</th>
+          <th>Settlement Credit</th>
+          <th>Balance Before</th>
+          <th>Balance After</th>
+          <th>Narration</th>
+        </tr>
+      </thead>
+      <tbody id="transaction-body">
+        <!-- Transactions will be dynamically added here -->
+      </tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
